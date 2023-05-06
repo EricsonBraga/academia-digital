@@ -29,5 +29,8 @@ public class MatriculaController {
   @DeleteMapping("/{id}")
   public void delete(@PathVariable Long id) {service.delete(id); }
 
+  @GetMapping("/{id}")
+  public Matricula get(@PathVariable Long id) {return service.get(id); }
+
 }
 
