@@ -33,5 +33,11 @@ public class AlunoController {
     return service.getAll(dataDeNacimento);
   }
 
+  @DeleteMapping("/{id}")
+  public void delete(@PathVariable Long id){ service.delete(id);}
+
+  @GetMapping("/{id}")
+  public Aluno get(@PathVariable Long id){return service.get(id);}
+
 
 }
